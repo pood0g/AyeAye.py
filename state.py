@@ -199,6 +199,7 @@ def _write_csv(filename, fieldnames, rows):
             output_file,
             fieldnames=fieldnames,
             extrasaction="ignore",
+            delimiter="\t"
         )
         writer.writeheader()
         writer.writerows(rows)
